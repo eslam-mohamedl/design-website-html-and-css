@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WATCHTRAILER</title>
+        <meta charset="utf-8">
+        <!-- start ie -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- first mobile meta -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Lemonada&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    </head>
+    <body> 
+        <!--start header-->
+        <div class="header">
+            <div class="overlay">
+        <div class="wallpaper">
+        <div class="nav">
+        <div clsss="logo">
+              <p>WATCH <span>TRAILER</span></p>    
+        </div>
+        <div class="manu">          
+        <ul class="list-unstyle d ">
+        <li>NEW MOVIES</li>    
+        <li>UP COMING</li>    
+        <li>REVIOWS</li>    
+        <li>NEWS</li>    
+        </ul>    
+        </div>
+        <div class="play_button">
+        <img  src="play/2.png" width="70" high="70">    
+        </div>
+        </div>  
+            <div class="clearfix"></div>
+        </div>
+        </div>
+                </div>
+
+        <div class="video_model">
+        <div class="closebtn">X</div>
+        <video id="myvideo" width="99%" height="atuo" controls>
+          <source src="move/rion.mp4">
+        </video>
+            <div class="clearfix"></div>
+        </div>
+               <!--end header-->
+               <!--start  move-one-->
+                <div class="group-one" style="background-color:black">
+                 <div class="container">
+                <h2>popular movies </h2>  
+                <div class="pictures-one">
+                <img src="one/1.jpg" alt="one" width="180" height="350">     
+                <img src="one/2.jpg" alt="two" width="180" height="350">     
+                <img src="one/3.jpg" alt="three" width="180" height="350">     
+                <img src="one/4.jpg" alt="four" width="180" height="350">     
+                </div>
+                     <button type="button">view all</button>
+                </div>
+                                <div class="clearfix"></div>
+
+                </div>
+               <!--end  move-one-->
+        <!--start  move-two-->
+                <div class="group-two" style="background-color:black">
+                 <div class="container">
+                <h2>must watch </h2>  
+                <div class="pictures-two">
+                <img src="two/5.jpg" alt="one" width="180" height="350">     
+                <img src="two/6.jpg" alt="two" width="180" height="350">     
+                <img src="two/7.jpg" alt="three" width="180" height="350">     
+                <img src="two/8.jpg" alt="four" width="180" height="350">     
+                </div>
+                     <button type="button">view all</button>
+                </div>
+                                <div class="clearfix"></div>
+
+                </div>
+               <!--end  move-two-->
+        <!--start  move-three-->
+                <div class="group-three" style="background-color:black">
+                 <div class="container">
+                <h2>must watch </h2>  
+                <div class="pictures-three">
+                <img src="three/11.jpg" alt="one" width="180" height="350">     
+                <img src="three/13.jpg" alt="two" width="180" height="350">     
+                <img src="three/17.jpg" alt="three" width="180" height="350">     
+                <img src="three/18.jpg" alt="four" width="180" height="350">     
+                </div>
+                     <button type="button">view all</button>
+                </div>
+                                <div class="clearfix"></div>
+
+                </div>
+               <!--end  move-two-->
+               <!--start imformation-->
+               <div class="imformation text-center">
+               <div class="overlay">
+               <h2>get the best movies trailders  straight in your <br>inbox each  week</h2>
+                   <div class="info text-center">
+                   <input class="form-control " type="text" placeholder="Eamil Address">
+                   <button type="button">subscuribe</button>
+                   </div>
+               </div>
+                               <div class="clearfix"></div>
+
+               </div>
+               <!--end  imformation-->
+               <!--start end-->
+              <div class="ending text-center">
+              <h2><span>watch</span> trailer</h2>
+              <p class="lead">2020 MoviesStuff all Designed by  <br> eslam mohamed</p>
+              </div>
+               <!--end  end-->
+     
+ 
+        
+
+        
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function(){
+           
+            
+            $(".play_button").click(function(){
+            $(".video_model").show();
+            $(".closebtn").show();
+            });
+            
+            $(".video_modal").click(function(){
+               $(this).show();
+            });
+            
+            $(".closebtn").click(function(){
+            $(this).fadeOut(function(){
+            $(".video_model").css("display", "none");
+            });
+            });
+            
+             $("#myvideo").click(function(){
+            $(this).load();
+            });
+            
+           
+        });
+        </script>
+    </body>
+    </html>
